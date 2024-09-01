@@ -1,7 +1,27 @@
 import css from "./TransactionHistory.module.css";
 
-const TransactionHistory = () => {
-  return <div></div>;
-};
+export default function TransactionHistory({ items }) {
+  return (
+    <table className={css.table}>
+      <thead className={css.thead}>
+        <tr>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Currency</th>
+        </tr>
+      </thead>
 
-export default TransactionHistory;
+      <tbody>
+        {items.map(({ id, type, amount, currency }) => {
+          return (
+            <tr key={id} className={css.tRow}>
+              <td>{type}</td>
+              <td>{amount}</td>
+              <td>{currency}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  );
+}

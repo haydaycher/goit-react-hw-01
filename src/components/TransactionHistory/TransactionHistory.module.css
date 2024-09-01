@@ -1,0 +1,27 @@
+.table {
+  width: 740px;
+  margin: 20px auto;
+
+  background-color: #fafafa;
+  border: 2px solid #252525;
+  border-collapse: collapse;
+}
+
+.thead {
+  color: aliceblue;
+  background-color: black;
+}
+
+.tRow {
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 2px solid #252525;
+}
+
+tr:nth-child(even) {
+  background-color: #cbcbce;
+}
