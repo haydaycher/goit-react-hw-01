@@ -1,0 +1,31 @@
+.item {
+  box-sizing: border-box;
+  width: 140px;
+  border: 1px solid #676767;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.img {
+  width: 100%;
+}
+
+.title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.statusText {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+.isActive {
+  color: #03f861;
+}
+
+.isRetired {
+  color: #f71420;
+}
